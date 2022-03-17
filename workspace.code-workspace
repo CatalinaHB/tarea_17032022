@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Clase 22-02-2022 (5)"
+		},
+		{
+			"path": "..\\..\\Clase 22-02-2022 (4)"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Tarea 3"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Tarea 4",
+		"liveServer.settings.port": 5501
+	}
+}

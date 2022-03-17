@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor {
+  background-color: white;
+  border: solid white 0px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  gap: 1px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "barra barra barra barra barra barra"
+    "logo logo espacio espacio login carro"
+    "logo logo nav1 nav1 nav1 nav1"
+    "imagen imagen imagen imagen imagen imagen"
+    "productos productos    productos productos productos productos"
+    "ligera ligera ligera ligera ligera ligera"
+    "servicios servicios servicios servicios servicios servicios"
+    "imagen_servicios imagen_servicios  imagen_servicios planos planos planos"
+    "imagen_servicios imagen_servicios  imagen_servicios memoria memoria memoria"
+    "imagen_servicios imagen_servicios  imagen_servicios detallamiento detallamiento detallamiento"
+    "imagen_servicios imagen_servicios  imagen_servicios asesorias asesorias asesorias"
+    "footer_1 footer_1 footer_2 footer_2 footer_3 footer_3"
+    "copy copy copy copy copy copy";
+}
+.caja {
+  margin: 1px;
+  padding: 1px;
+}
+.barra {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: barra;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 50px;
+  justify-self: center;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: auto;
+  text-align: center;
+}
+.logo {
+  background-color: white;
+  grid-area: logo;
+  align-self: center;
+  margin-top: -150px;
+  margin-bottom: auto;
+  margin-left: -10px;
+  height: 10%;
+  width: 100%;
+}
+.espacio {
+  background-color: white;
+  color: white;
+  grid-area: espacio;
+  margin-top: -150px;
+  height: 50px;
+}
+.login {
+  background-color: white;
+  grid-area: login;
+  justify-self: right;
+  margin-top: -150px;
+  margin-bottom: auto;
+  height: 50px;
+  width: 50px;
+  margin-right: -180px;
+}
+.carro {
+  background-color: white;
+  grid-area: carro;
+  justify-self: right;
+  margin-top: -150px;
+  margin-bottom: auto;
+  height: 50px;
+  width: 50px;
+}
+.nav1 {
+  background-color: white;
+  grid-area: nav1;
+  justify-self: right;
+  margin-top: -339px;
+  margin-bottom: auto;
+  height: 30px;
+  width: 900px;
+}
+.imagen {
+  background-color: white;
+  grid-area: imagen;
+  align-self: stretch;
+  margin-top: -480px;
+  margin-bottom: auto;
+  margin-left: 0px;
+  align-self: center;
+  width: 100%;
+}
+.productos {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: productos;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  margin-left: -5px;
+  height: 60px;
+  font-size: 15px;
+  margin-top: -8px;
+  margin-bottom: auto;
+}
+.productos:hover {
+  transform: scale(1.1);
+}
+.ligera {
+  background-color: white;
+  grid-area: ligera;
+  height: 100%;
+  width: 100%;
+  align-self: stretch;
+  justify-self: right;
+  margin-bottom: 90px;
+  margin-top: -130px;
+}
+
+.servicios {
+  background-color: orange;
+  grid-area: servicios;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  margin-left: -5px;
+  height: 60px;
+  font-size: 15px;
+  margin-top: -100px;
+  color: white;
+  padding-top: 0%;
+}
+.servicios:hover {
+  transform: scale(1.1);
+}
+.imagen_servicios {
+  background-color: white;
+  grid-area: imagen_servicios;
+  width: 100%;
+}
+.planos {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: planos;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  margin-left: 90px;
+  color: white;
+  height: auto;
+  justify-self: center;
+}
+.planos:hover {
+  transform: scale(1.1);
+}
+.memoria {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: memoria;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  margin-left: 90px;
+  color: white;
+  height: auto;
+  text-align: center;
+}
+.memoria:hover {
+  transform: scale(1.1);
+}
+.detallamiento {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: detallamiento;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  margin-left: 90px;
+  color: white;
+}
+.detallamiento:hover {
+  transform: scale(1.1);
+}
+.asesorias {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: asesorias;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  margin-left: 90px;
+  color: white;
+}
+.asesorias:hover {
+  transform: scale(1.1);
+}
+.footer_1 {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: footer_1;
+  align-content: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+}
+.footer_2 {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: footer_2;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 10px;
+  width: 110%;
+  height: 100%;
+  margin-bottom: auto;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer_3 {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: footer_3;
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.copy {
+  background-color: white;
+  grid-area: copy;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+nav {
+  background: white;
+  margin-top: 10px;
+  text-align: right;
+  position: relative;
+  display: flexbox;
+  height: 50px;
+  width: 900px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(58, 84, 180, 100);
+}
+ul {
+  list-style: none;
+  padding: 1.2rem;
+}
+li {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem; /*Letra del navegador*/
+  margin: -60px 20px;
+  color: violet;
+}
+ul ul {
+  position: absolute;
+  display: none;
+}
+ul ul li {
+  display: block;
+  font-size: 1 rem; /*Letra del submenú*/
+  width: 300px;
+  text-align: left;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: rgba(58, 84, 180, 100);
+}
+a:hover {
+  color: darkblue; /* Sirve para que la letra cambie de color cuando se pasa el mouse*/
+  font-weight: bold;
+}
+ul li:hover ul {
+  display: block;
+  background-color: white;
+}
