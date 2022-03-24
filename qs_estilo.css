@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor {
+  background-color: white;
+  border: solid white 0px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  gap: 1px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 60px 60px 60px 1fr 100px 60px 60px 150px 200px 300px 10px;
+  grid-template-areas:
+    "barra barra barra barra barra barra"
+    "logo logo espacio espacio login carro"
+    "logo logo nav1 nav1 nav1 nav1"
+    "espacio3 espacio3 espacio3 espacio3 espacio3 espacio3"
+    "img_qs img_qs img_qs text_qs text_qs text_qs"
+    "espacio2 espacio2 espacio2 espacio2 espacio2 espacio2"
+    "titulo titulo titulo titulo titulo titulo "
+    "espacio4 espacio4 espacio4 espacio4 espacio4 espacio4"
+    "foto_m1 foto_m2 foto_m3 foto_h1 foto_h2 foto_h3"
+    "texto_m1 texto_m2 texto_m3 texto_h1 texto_h2 texto_h3"
+    "footer_1 footer_1 footer_2 footer_2 footer_3 footer_3"
+    "copy copy copy copy copy copy";
+}
+.caja {
+  margin: 1px;
+  padding: 1px;
+}
+.barra {
+  grid-area: barra;
+  background-color: rgba(58, 84, 180, 100);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 50px;
+  justify-self: center;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: auto;
+  text-align: center;
+}
+.logo {
+  grid-area: logo;
+  background-color: white;
+  align-self: center;
+  margin-left: -10px;
+}
+.espacio {
+  background-color: white;
+  color: white;
+  grid-area: espacio;
+  height: 50px;
+  width: 100px;
+  margin-left: 100%;
+}
+.login {
+  background-color: white;
+  grid-area: login;
+  justify-self: right;
+  height: 50px;
+  width: 50px;
+  margin-right: -180px;
+}
+.carro {
+  background-color: white;
+  grid-area: carro;
+  justify-self: right;
+  height: 50px;
+  width: 50px;
+}
+.nav1 {
+  background-color: white;
+  grid-area: nav1;
+  justify-self: right;
+  height: 30px;
+  width: 700px;
+  margin-right: 60px;
+  margin-top: -20px;
+  margin-bottom: auto;
+}
+.espacio3 {
+  grid-area: espacio3;
+}
+.img_qs {
+  grid-area: img_qs;
+  background-color: white;
+  align-self: stretch;
+  margin-left: 0px;
+  align-self: center;
+  width: 100%;
+}
+.text_qs {
+  grid-area: text_qs;
+  background-color: white;
+  color: rgba(58, 84, 180, 100);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: inherit;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  height: 94%;
+  font-size: 15px;
+  margin-left: -15px;
+}
+.espacio2 {
+  grid-area: espacio2;
+}
+.titulo {
+  grid-area: titulo;
+  color: rgba(58, 84, 180, 100);
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+.espacio4 {
+  grid-area: espacio4;
+}
+.foto_m1 {
+  grid-area: foto_m1;
+}
+.foto_m1:hover {
+  transform: scale(1.5);
+}
+.foto_m2 {
+  grid-area: foto_m2;
+}
+.foto_m2:hover {
+  transform: scale(1.5);
+}
+.foto_m3 {
+  grid-area: foto_m3;
+}
+.foto_m3:hover {
+  transform: scale(1.5);
+}
+.foto_h1 {
+  grid-area: foto_h1;
+}
+.foto_h1:hover {
+  transform: scale(1.5);
+}
+.foto_h2 {
+  grid-area: foto_h2;
+}
+.foto_h2:hover {
+  transform: scale(1.5);
+}
+.foto_h3 {
+  grid-area: foto_h3;
+}
+.foto_h3:hover {
+  transform: scale(1.5);
+}
+.texto_m1 {
+  grid-area: texto_m1;
+  color: rgba(58, 84, 180, 100);
+  font-size: small;
+  font-style: oblique;
+}
+.texto_m2 {
+  grid-area: texto_m2;
+  color: rgba(58, 84, 180, 100);
+  font-size: small;
+  font-style: oblique;
+}
+.texto_m3 {
+  grid-area: texto_m3;
+  color: rgba(58, 84, 180, 100);
+  font-size: small;
+  font-style: oblique;
+}
+.texto_h1 {
+  grid-area: texto_h1;
+  color: rgba(58, 84, 180, 100);
+  font-size: small;
+  font-style: oblique;
+}
+.texto_h2 {
+  grid-area: texto_h2;
+  color: rgba(58, 84, 180, 100);
+  font-size: small;
+  font-style: oblique;
+}
+.texto_h3 {
+  grid-area: texto_h3;
+  color: rgba(58, 84, 180, 100);
+  font-size: small;
+  font-style: oblique;
+}
+.footer_1 {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: footer_1;
+  align-content: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+}
+.footer_2 {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: footer_2;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 10px;
+  width: 110%;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: auto;
+}
+.footer_3 {
+  background-color: rgba(58, 84, 180, 100);
+  grid-area: footer_3;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin-bottom: auto;
+}
+.copy {
+  grid-area: copy;
+  background-color: white;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  height: 20px;
+  margin-bottom: 10px;
+}
+nav {
+  background: white;
+  margin-top: 10px;
+  margin-left: -50px;
+  text-align: right;
+  position: relative;
+  display: flexbox;
+  height: 50px;
+  width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(58, 84, 180, 100);
+}
+ul {
+  list-style: none;
+  padding: 1.2rem;
+}
+li {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem; /*Letra del navegador*/
+  margin: -60px 20px;
+  color: violet;
+}
+ul ul {
+  position: absolute;
+  display: none;
+}
+ul ul li {
+  display: block;
+  font-size: 1 rem; /*Letra del submenú*/
+  width: 300px;
+  text-align: left;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: rgba(58, 84, 180, 100);
+}
+a:hover {
+  color: darkblue; /* Sirve para que la letra cambie de color cuando se pasa el mouse*/
+  font-weight: bold;
+}
+ul li:hover ul {
+  display: block;
+  background-color: white;
+}
